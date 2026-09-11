@@ -1,0 +1,63 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+:root {
+
+    /* Content Colors */
+    --content-primary: #FFFFFF;
+    --content-secondary: #C7C9CC;
+    --content-tertiary: #D9D9D9;
+    --content-brand: #c58de7;
+    --color-inverse: #030203;
+
+    /* Background Colors */
+    --background-primary: #020202;
+    --background-secondary: #111012;
+    --background-tertiary: #24222e;
+    --background-brand: #c58de7;
+    --background-gray: #3d3d3d;
+
+    /* Accent Colors */
+    --accent-pink: #d586e0;
+    --accent-blue: #91a1fa;
+    --accent-green: #77c0a7;
+    --accent-lime: #d1dc97;
+    --accent-red: #e9a9b3;
+
+    /* Gradient Colors */
+    --gradient-border: linear-gradient(
+        #77C0AF 0%,
+        #D1DC97 14.84%,
+        #E9A9B3 32.15%,
+        #D586E0 65.79%,
+        #91A1FA 84.58%);
+    --gradient-background: linear-gradient(
+        #D586E0 0%, 
+        #91A1FA 98.93%);
+    --gradient-content: linear-gradient(
+        #C7C9CC 0%, 
+        #3D3D3D 100%);
+
+    /* Sora */
+    --font-family-sora: "Sora", sans-serif;
+    --display-large: 800 72px/130% var(--font-family-sora);
+    --display-medium: 800 40px/130% var(--font-family-sora);
+    --display-small: 700 32px/130% var(--font-family-sora);
+
+    /* Roboto Mono */
+    --font-family-mono: "Roboto Mono", monospace;
+    --overline: 700 16px/150% var(--font-family-mono);
+
+    /* Roboto Flex */
+    --font-family-roboto: "Roboto Flex", sans-serif;
+    --paragraph-large: 500 16px/150% var(--font-family-roboto);
+    --paragraph-medium: 500 14px/150% var(--font-family-roboto);
+    --paragraph-small: 500 12px/150% var(--font-family-roboto);
+    --label-medium: 700 20px/150% var(--font-family-roboto);
+    --label-small: 700 16px/150% var(--font-family-roboto);
+
+}
