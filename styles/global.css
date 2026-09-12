@@ -61,3 +61,17 @@
     --label-small: 700 16px/150% var(--font-family-roboto);
 
 }
+
+body {
+    background-color: var(--background-primary);
+    color: white;
+}
+
+.container {
+  width: 100%;             /* Garante que o container seja fluido em telas pequenas */
+  margin-left: auto;       /* Alinha o container no centro da tela horizontalmente */
+  margin-right: auto;      
+  padding-left: 35px;      /* Evita que o conteúdo encoste nas bordas em telas mobile */
+  padding-right: 35px;
+  box-sizing: border-box;  /* Garante que o padding não aumente o tamanho final do container */
+}
