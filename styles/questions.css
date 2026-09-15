@@ -1,0 +1,25 @@
+.questions {
+    display: flex;
+    flex-direction: column;
+    gap: 36px;
+    margin-top: 86px;
+
+    .question {
+        
+        .question-title{
+            display: flex;
+            align-items: center;
+            gap: 8px;
+
+            .title {
+                font: var(--paragraph-medium);
+                color: var(--content-brand);
+            }
+        }
+
+        .description {
+            font: var(--paragraph-small);
+            padding-left: 28px;
+        }
+    }
+}
