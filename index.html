@@ -9,8 +9,12 @@
   <title>Numbers Sorter</title>
   <link rel="stylesheet" href="styles/index.css">
   <link href="https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Sora:wght@100..800&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght,XOPQ,XTRA,YOPQ,YTDE,YTFI,YTLC,YTUC@8..144,100..1000,96,468,79,-203,738,514,712&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Sora:wght@100..800&display=swap" rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Sora:wght@100..800&display=swap"
+    rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght,XOPQ,XTRA,YOPQ,YTDE,YTFI,YTLC,YTUC@8..144,100..1000,96,468,79,-203,738,514,712&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Sora:wght@100..800&display=swap"
+    rel="stylesheet">
 </head>
 
 <body>
@@ -34,9 +38,10 @@
 
       <section class="content-form">
 
-        <div class= "description-form">
+        <div class="description-form">
           <h3>QUERO SORTEAR:</h3>
-          <p>Defina o intervalo e quantidade de números, <br> clique em "Sortear" e veja os resultados na tela. É rápido e fácil!</p>
+          <p>Defina o intervalo e quantidade de números, <br> clique em "Sortear" e veja os resultados na tela. É rápido
+            e fácil!</p>
         </div>
 
         <form>
@@ -51,20 +56,25 @@
           </div>
 
           <div class="campo">
-            <label for=""  class="text">ATÉ</label>
+            <label for="" class="text">ATÉ</label>
             <input type="text" placeholder="100">
           </div>
         </form>
 
         <label class="switch">
-            <input type="checkbox">
-            <span class="slider"></span>
-            <span class="text">Não repetir número</span>
-          </label>
+          <input type="checkbox">
+          <span class="slider"></span>
+          <span class="text">Não repetir número</span>
+        </label>
 
       </section>
 
-      <button>
+      <section class="hide">
+        <h3>RESULTADO DO SORTEIO</h3>
+        <p class="result-number">1° RESULTADO</p>
+      </section>
+
+      <button class="">
         <span>SORTEAR</span>
         <img src="./assets/icons/arrow.svg" alt="ícone de seta">
       </button>
@@ -77,8 +87,9 @@
             <p class="title">Como funciona o sorteador de números?</p>
           </div>
 
-          <p class="description">O sorteador utiliza um algoritmo de geração aleatória para criar números dentro do intervalo especificado pelo usuário.</p>
-        
+          <p class="description">O sorteador utiliza um algoritmo de geração aleatória para criar números dentro do
+            intervalo especificado pelo usuário.</p>
+
         </div>
 
         <div class="question">
@@ -88,11 +99,12 @@
             <p class="title">Posso escolher o intervalo dos números?</p>
           </div>
 
-          <p class="description">Sim, você pode definir os valores mínimo e máximo para o intervalo dos números sorteados.</p>
+          <p class="description">Sim, você pode definir os valores mínimo e máximo para o intervalo dos números
+            sorteados.</p>
 
         </div>
       </section>
-    </main>  
+    </main>
   </div>
 
   <script src="scripts/script.js"></script>
