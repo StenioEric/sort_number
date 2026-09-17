@@ -1,0 +1,17 @@
+.result{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 4px;
+    margin-top: 71px;
+    
+    h3 {
+      font: var(--label-medium);
+    }
+
+    p {
+      font: var(--overline);
+    }
+
+} 
