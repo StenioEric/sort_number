@@ -103,12 +103,23 @@
       box-sizing: border-box;
       font: var(--display-small);
       text-align: center;
-      background-color: var(--background-primary);
-      border: none;
+      color: var(--content-primary);
+      background:var(--background-primary);
+      border: 2px solid transparent;
+      border-radius: 8px;
+      outline: none;
+    }
+
+    .campo input:hover,
+    .campo input:focus {
+      border-color:var(--accent-pink);
+      color: var(--content-primary);
+      cursor: pointer;
     }
 
     .campo input::placeholder {
       color: var(--content-primary);
+      opacity: 0.5;
     }
   }
 }
