@@ -44,7 +44,7 @@
             e fácil!</p>
         </div>
 
-        <form>
+        <form id="form">
           <div class="campo">
             <label for="quantidade" class="text">NÚMEROS</label>
             <input type="number" placeholder="2" id="quantidade">
@@ -62,21 +62,30 @@
         </form>
 
         <label class="switch">
-          <input type="checkbox">
+          <input type="checkbox" id="checkbox">
           <span class="slider"></span>
           <span class="text">Não repetir número</span>
         </label>
 
       </section>
 
-      <section class="hide">
+      <section class="hide result-section">
         <h3>RESULTADO DO SORTEIO</h3>
-        <p class="result-number">1° RESULTADO</p>
+        <p class="result-label">1° RESULTADO</p>
       </section>
 
-      <button class="" id="sortear">
+      <div class="result-numbers">
+
+      </div>
+
+      <button class="btn-1" id="sortear">
         <span>SORTEAR</span>
         <img src="./assets/icons/arrow.svg" alt="ícone de seta">
+      </button>
+
+      <button class="hide btn-2" id="sortear-novamente">
+        <span>SORTEAR NOVAMENTE</span>
+        <img src="./assets/icons/play.svg" alt="ícone de seta">
       </button>
 
       <section class="questions">
