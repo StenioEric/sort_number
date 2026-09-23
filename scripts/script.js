@@ -15,34 +15,56 @@ const form = document.getElementById("form")
 sort.addEventListener("click", (event) => {
     event.preventDefault();
 
-    let minValeu = min.value
-    let maxValue = max.value
-    let quantValue = quantidade.value
+    // Aqui os valores são mantidos como string para que possa ser realizada a primeira validação. Caso contrário seria 0 e sempre iria pular a primeira validação.
+    const minValue = min.value
+    const maxValue = max.value
+    const quantValue = quantidade.value
 
     const numbers = []
 
-    let i = 0
-    while (i < quantValue) {
-        let result = sortRandom(minValeu, maxValue)
+    if (quantValue === "" || minValue === "" || maxValue === "") {
 
-        if (checkbox.checked) {
+        alert("Preencha todos os campos!")
 
-            while (number = numbers.includes(result)) {
-                result = sortRandom(minValeu, maxValue)
-            }
+    } else {
 
-            numbers.push(result)
+        // Aqui os valores são passados para número
+        const minNumber = Number(minValue)
+        const maxNumber = Number(maxValue)
+        const quantNumber = Number(quantValue)
+
+        if (quantNumber <= 0 || maxNumber <= minNumber) {
+
+            alert("Preencha os dados do campo corretamente!")
+
+        } else if (checkbox.checked && quantNumber > (maxNumber - minNumber + 1)) {
+
+            alert("A quantidade de números não pode ser maior que o intervalo!")
 
         } else {
-            numbers.push(result)
+
+            let i = 0
+
+            while (i < quantNumber) {
+
+                let result = sortRandom(minNumber, maxNumber)
+
+                if (checkbox.checked) {
+
+                    while (numbers.includes(result)) {
+                        result = sortRandom(minNumber, maxNumber)
+                    }
+
+                }
+
+                numbers.push(result)
+
+                i++
+            }
+
+            showResult(numbers)
         }
-        i++
     }
-
-    showResult(numbers)
-
-    console.log(numbers)
-
 })
 
 sortAgain.addEventListener("click", (event) => {
@@ -66,7 +88,7 @@ function showResult(numbers) {
     numbers.forEach((number) => {
 
         contentForm.classList.add("hide")
-        
+
         resultSection.classList.remove("hide")
 
         btn1.classList.add("hide")
@@ -79,7 +101,7 @@ function showResult(numbers) {
 
         const item = document.createElement("p")
         item.textContent = number
-        
+
         numberItem.appendChild(item)
         resultNumbers.appendChild(numberItem)
     });
