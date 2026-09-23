@@ -16,6 +16,10 @@
 
 } 
 
+.result-section.hide {
+    display: none;
+}
+
 .result-numbers {
     display: flex;
     justify-content: center;
