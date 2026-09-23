@@ -3,6 +3,12 @@ const min = document.getElementById("minimo")
 const max = document.getElementById("maximo")
 const sort = document.getElementById("sortear")
 const checkbox = document.querySelector(".switch input")
+const resultNumbers = document.querySelector(".result-numbers")
+const contentForm = document.querySelector(".content-form")
+const resultSection = document.querySelector(".result-section")
+const btn1 = document.querySelector(".btn-1")
+const btn2 = document.querySelector(".btn-2")
+
 
 sort.addEventListener("click", (event) => {
     event.preventDefault();
@@ -31,6 +37,8 @@ sort.addEventListener("click", (event) => {
         i++
     }
 
+    showResult(numbers)
+
     console.log(numbers)
 
 })
@@ -40,5 +48,33 @@ function sortRandom(min, max) {
     max = Math.floor(max);
     return Math.floor(Math.random() * (max - min + 1)) + min;
 }
+
+function showResult(numbers) {
+
+    resultNumbers.innerHTML = "";
+
+    numbers.forEach((number) => {
+
+        contentForm.classList.add("hide")
+        
+        resultSection.classList.remove("hide")
+
+        btn1.classList.add("hide")
+        btn1.classList.remove("btn-1")
+
+        btn2.classList.remove("hide")
+
+        const numberItem = document.createElement("div")
+        numberItem.classList.add("result-number")
+
+        const item = document.createElement("p")
+        item.textContent = number
+        
+        numberItem.appendChild(item)
+        resultNumbers.appendChild(numberItem)
+    });
+
+}
+
 
 
