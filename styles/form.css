@@ -124,7 +124,7 @@
   }
 }
 
-button {
+.btn-1, .btn-2 {
   width: 318px;
   height: 56px;
   background-color: var(--background-tertiary);
@@ -136,7 +136,7 @@ button {
   border-radius: 8px;
 
   span {
-    font: var(--label-medium);
+    font: var(--overline);
     color: var(--content-primary);
   }
 
@@ -145,5 +145,9 @@ button {
     height: 24px;
 
   }
+}
+
+.btn-2.hide{
+  display: none;
 }
 
