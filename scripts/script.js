@@ -100,8 +100,5 @@ function resetPage() {
     btn1.classList.add("btn-1")
     btn2.classList.add("hide")
 
-
+    form.reset()
 }
-
-
-
