@@ -87,23 +87,28 @@ function showResult(numbers) {
 
     numbers.forEach((number) => {
 
-        contentForm.classList.add("hide")
+        contentForm.classList.add("hide");
 
-        resultSection.classList.remove("hide")
+        resultSection.classList.remove("hide");
 
-        btn1.classList.add("hide")
-        btn1.classList.remove("btn-1")
+        btn1.classList.add("hide");
+        btn1.classList.remove("btn-1");
 
-        btn2.classList.remove("hide")
+        btn2.classList.remove("hide");
 
-        const numberItem = document.createElement("div")
-        numberItem.classList.add("result-number")
+        const numberItem = document.createElement("div");
+        numberItem.classList.add("result-number");
 
-        const item = document.createElement("p")
-        item.textContent = number
+        const background = document.createElement("div");
+        background.classList.add("result-background");
 
-        numberItem.appendChild(item)
-        resultNumbers.appendChild(numberItem)
+        const item = document.createElement("p");
+        item.textContent = number;
+
+        numberItem.appendChild(background);
+        numberItem.appendChild(item);
+
+        resultNumbers.appendChild(numberItem);
     });
 
 }
