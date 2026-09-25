@@ -10,7 +10,9 @@ const resultSection = document.querySelector(".result-section")
 const btn1 = document.querySelector(".btn-1")
 const btn2 = document.querySelector(".btn-2")
 const form = document.getElementById("form")
+const resultLabel = document.querySelector(".result-label")
 
+let contador = 0
 
 sort.addEventListener("click", (event) => {
     event.preventDefault();
@@ -42,6 +44,8 @@ sort.addEventListener("click", (event) => {
             alert("A quantidade de números não pode ser maior que o intervalo!")
 
         } else {
+            
+            contador++
 
             let i = 0
 
@@ -60,6 +64,7 @@ sort.addEventListener("click", (event) => {
                 numbers.push(result)
 
                 i++
+
             }
 
             showResult(numbers)
@@ -84,6 +89,8 @@ function sortRandom(min, max) {
 function showResult(numbers) {
 
     resultNumbers.innerHTML = "";
+
+    resultLabel.innerText = `${contador}° RESULTADO`
 
     numbers.forEach((number) => {
 
