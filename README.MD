@@ -46,9 +46,8 @@ sort_number/
 │   │   ├── page-heading.css
 │   │   ├── questions.css
 │   │   ├── results.css
-│   │   └── sorter-form.css
-│   ├── layout/
-│   │   └── header.css
+│   │   ├── sorter-form.css
+│   |   └── header.css
 │   ├── index.css
 │   └── utilities.css
 ├── index.html
