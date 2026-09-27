@@ -1,0 +1,22 @@
+.btn-1,
+.btn-2 {
+  width: 318px;
+  height: 56px;
+  background-color: var(--background-tertiary);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  border: none;
+  border-radius: 8px;
+
+  span {
+    font: var(--overline);
+    color: var(--content-primary);
+  }
+
+  img {
+    width: 24px;
+    height: 24px;
+  }
+}

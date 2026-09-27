@@ -1,0 +1,14 @@
+.page-heading {
+  p {
+    font: var(--overline);
+  }
+
+  h1 {
+    font: var(--display-medium);
+    background: var(--gradient-content);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    margin-bottom: 42px;
+  }
+}
