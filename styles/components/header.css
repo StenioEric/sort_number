@@ -17,3 +17,11 @@ header {
     letter-spacing: 4%;
   }
 }
+
+@media (min-width: 1336px) {
+  header{
+    justify-content: flex-start;
+    margin: 44px 89px 10px 0;
+  }
+  
+}

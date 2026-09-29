@@ -20,3 +20,12 @@
     height: 24px;
   }
 }
+
+@media (min-width: 1336px) {
+    .btn-1,
+    .btn-2 {
+      margin: auto;
+      grid-area: F;
+      width: 100%;
+    }
+}

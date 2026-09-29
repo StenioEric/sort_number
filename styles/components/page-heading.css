@@ -1,6 +1,6 @@
 .page-heading {
   p {
-    font: var(--overline);
+    font: var(--paragraph-small);
   }
 
   h1 {
@@ -10,5 +10,15 @@
     background-clip: text;
     color: transparent;
     margin-bottom: 42px;
+  }
+}
+
+@media (min-width: 1336px) {
+  .page-heading {
+    grid-area: C;
+
+    h1 {
+      font: var(--display-large);
+    }
   }
 }

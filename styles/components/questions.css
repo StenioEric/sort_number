@@ -22,3 +22,16 @@
     }
   }
 }
+
+@media (min-width: 1336px) {
+  .questions{
+    grid-area: E;
+    margin-top: 0;
+
+    .question{
+      height: 100%;
+      width: 386px;
+    }
+
+  }
+}

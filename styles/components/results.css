@@ -107,3 +107,9 @@
     color: var(--content-brand);
   }
 }
+
+@media (min-width: 1336px) {
+  .result-section{
+    grid-area: B;
+  }
+}
