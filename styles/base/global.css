@@ -10,3 +10,17 @@ body {
   padding-left: 35px;
   padding-right: 35px;
 }
+@media (min-width: 900px) {
+  .container{
+    padding-left: 134px;
+    padding-right: 134px;
+  }
+
+  main {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "A B"
+      "C D"
+      "E F";
+  }
+}
